@@ -1,7 +1,7 @@
 import dash
 import pandas as pd
-from dash import dcc, html, Input, Output
 import plotly.express as px
+from dash import dcc, html, Input, Output
 
 df = pd.read_csv("data/formatted_sales_data.csv")
 df['sales'] = pd.to_numeric(df['sales'])

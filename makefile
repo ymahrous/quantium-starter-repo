@@ -10,6 +10,9 @@ freeze:
 	pip3 freeze > requirements.txt
 
 clean:
-	find . -type d -name "__pycache__" -exec rm -r {} +
+	find . -type d -name "__pycache__" -exec rm -r {} + && rm -r ".pytest_cache"
 
-.PHONY: run install freeze clean
+test:
+	pytest test_app.py
+
+.PHONY: run install freeze clean test
