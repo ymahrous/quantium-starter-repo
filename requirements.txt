@@ -1,4 +1,5 @@
 pandas
 dash
 pytest
+webdriver-manager
 selenium
